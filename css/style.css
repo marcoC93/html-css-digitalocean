@@ -1,16 +1,21 @@
 /* Regole generali */
 .btn-primary {
     background-color: #006aff;
+    color: white;
+    font-weight: bold;
 }
-
+.btn-secondary {
+    background-color: transparent ;
+    color: #006aff;
+    font-weight: bold;
+}
 
 
 /* Inizio Navbar */
-.navbar-brand img {
-    height: 100%;
-}
+
 .navbar {
     margin-bottom: 0;
+    border-radius: 0;
 }
 
 #navbar-top {
@@ -36,29 +41,51 @@
     line-height: 100%;
     color: #5b6987;
 }
-#navbar-bottom {
 
-}
 .btn-custom {
     background-color: rgb(0,215,210);
 }
+#navbar-bottom {
+    height: 70px;
+
+}
+#navbar-bottom a {
+    height: 100%;
+}
+.navbar-brand img {
+    max-width: 200px;
+	height: 70%;
+	margin: auto 10px;
+}
 .navbar-default .navbar-nav > li > a {
+    height: 100%;
+    line-height: 35px;
     color: hsl(221,93%,16%) !important;
+}
+.navbar-default .navbar-nav > a > span {
+    width: 80px;
+    height: 80%;
+    line-height: 35px;
+
 }
     /* Fine sezione "navbar"   */
 
     /* inizio jumbotron */
 
 #jumbotron {
-    padding-top: 90px;
+    padding-top: 110px;
     background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
     background-size: cover;
     background-position: bottom;
 
 }
-#jumbotron h1,p {
+#jumbotron-welcome-text {
     color: white;
+    height: 70%;
+    margin: auto;
 }
+
+
 /*  Form sezione "jumbotron" */
 #sign-up {
     /* height: 200px; */
@@ -81,12 +108,37 @@
 #sign-up .btn-lg {
     width: 100%;
     margin-top: 5px;
-    background-color: #006aff;
+
 }
 #sign-up h5 {
     height: 100%;
     line-height: 40px;
     font-size: 20px;
+}
+#sign-up-footer {
+    padding: 20px;
+    width: 100%;
+}
+#sign-up-footer > .btn.btn-lg {
+    width: calc(90% - 1px );
+}
+#sign-up-footer > span.btn-lg{
+    /* padding: 0; */
+    margin: 0;
+    border: 1px solid red;
+}
+#sign-up-footer > #github-icon {
+    width: calc(10% - 4px );
+    text-align: center;
+    padding: 0 15px;
+    border: 1px solid red;
+}
+#sign-up-footer > #github-icon > img {
+    object-position: center;  
+    width: 20px;
+
+
+
 }
 
 /* Fine form sezione "jumbotron" */
