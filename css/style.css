@@ -1,3 +1,11 @@
+/* Regole generali */
+.btn-primary {
+    background-color: #006aff;
+}
+
+
+
+/* Inizio Navbar */
 .navbar-brand img {
     height: 100%;
 }
@@ -46,36 +54,52 @@
     background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
     background-size: cover;
     background-position: bottom;
-    height: 400px;
+
+}
+#jumbotron h1,p {
+    color: white;
 }
 /*  Form sezione "jumbotron" */
 #sign-up {
     /* height: 200px; */
     margin-top: 30px;
-    /* padding: 30px; */
-    /* padding-top: 10px; */
+    border-radius: 5px;
     background: white;
+}
+#sign-up #sign-up-header {
+    height: 40px ;
+    background-color: #f3f5f9;
+    border-radius: 5px;
 }
 #sign-up-content {
     padding: 20px;
 }
 #sign-up .input-group {
     width: 100%;
+    margin: 5px;
 }
-#sign-up #sign-up-header {
-    height: 40px ;
-    background-color: #f3f5f9;
-    /* background-color: grey; */
+#sign-up .btn-lg {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #006aff;
 }
 #sign-up h5 {
     height: 100%;
     line-height: 40px;
     font-size: 20px;
 }
+
 /* Fine form sezione "jumbotron" */
+@media screen and  (min-width:768px)
+{
+    #jumbotron {
+        height: 400px;
+}
+
+}
+
 @media screen and  (min-width:992px)
 {
     #navbar-top {
         display: block;
     }
-}
