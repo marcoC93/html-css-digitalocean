@@ -74,6 +74,7 @@
 
 #jumbotron {
     padding-top: 110px;
+    padding-bottom: 40px;
     background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
     background-size: cover;
     background-position: bottom;
@@ -100,6 +101,7 @@
 }
 #sign-up-content {
     padding: 20px;
+    border-bottom: 1px solid #f3f5f9;
 }
 #sign-up .input-group {
     width: 100%;
@@ -117,21 +119,27 @@
 }
 #sign-up-footer {
     padding: 20px;
+    padding-bottom: 70px;
     width: 100%;
 }
 #sign-up-footer > .btn.btn-lg {
-    width: calc(90% - 33px );
+    width: calc(100% - 52px );
 }
 #sign-up-footer > span.btn-lg{
-    /* padding: 0; */
+    float: left;
+    display: block;
     margin: 0;
-    border: 1px solid red;
+    border: 1px solid #006aff;
+    font-size: 16px;
 }
 #sign-up-footer > #github-icon {
+    float: left;
+    display: block;
+
     width: 10%;
     text-align: center;
     padding: 10px 25px;
-    border: 1px solid red;
+    border: 1px solid #006aff;
 }
 #sign-up-footer > #github-icon > img {
     object-position: center;
@@ -143,10 +151,50 @@
 }
 
 /* Fine form sezione "jumbotron" */
+
+/* Sezione customers */
+
+#customers {
+    background-color: #f3f5f9;
+    padding: 30px;
+}
+#customers img {
+    display: block;
+    margin: 0 auto;
+}
+#customers h6 {
+    padding: 20px;
+}
+#customers a {
+    display: inline-block;
+    width: 100%;
+    color: #0069ff;
+    font-size: 20px;
+}
+#features {
+    height: 400px;
+}
+#features ul {
+
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type: none;
+    border-bottom: 1px solid #5b6987 ;
+}
+#features p {
+    color: #5b6987;
+}
+#features li {
+    display: inline-block;
+    color: #5b6987;
+    padding: 10px;
+}
 @media screen and  (min-width:768px)
 {
     #jumbotron {
-        height: 400px;
+
 }
 
 }
@@ -155,4 +203,20 @@
 {
     #navbar-top {
         display: block;
+    }
+/* Sezione features */
+    #features ul {
+
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+        list-style-type: none;
+        border-left: 1px solid #5b6987 ;
+        border-bottom: 0 ;
+    }
+    #features li {
+        display: list-item;
+        color: #5b6987;
+        padding: 10px;
     }
