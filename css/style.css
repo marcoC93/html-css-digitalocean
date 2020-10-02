@@ -198,6 +198,7 @@
     display: block;
     margin: 0 auto;
 }
+.card {}
 /* sezione carousel  */
 
 #carousel {
@@ -239,6 +240,33 @@
 #carousel li {
     display: inline-block;
     color: #006aff;
+}
+/* Sezione build-for-business  */
+
+/* Fine sezione build-for-business */
+/* Sezione Table */
+#table {
+    background: url(/Users/marco/Documents/Corsoboolean/esercizi/html-css-digitalocean/img/table-bg.png);
+    background-position: center;
+    background-size: contain;
+
+    height: 400px;
+}
+#table h2,p {
+    color: white;
+}
+#table li {
+    
+    list-style-type: none;
+}
+}
+#table li p{
+    display: inline-block;
+
+}
+#table li a {
+    float: right;
+    color: #00d7d2;
 }
 @media screen and  (min-width:768px)
 {
