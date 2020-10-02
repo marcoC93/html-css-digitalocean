@@ -154,27 +154,27 @@
 
 /* Sezione customers */
 
-#customers {
+    #customers {
     background-color: #f3f5f9;
     padding: 30px;
 }
-#customers img {
+    #customers img {
     display: block;
     margin: 0 auto;
 }
-#customers h6 {
+    #customers h6 {
     padding: 20px;
 }
-#customers a {
+    #customers a {
     display: inline-block;
     width: 100%;
     color: #0069ff;
     font-size: 20px;
 }
-#features {
+    #features {
     height: 400px;
 }
-#features ul {
+    #features ul {
 
     display: block;
     width: 70%;
@@ -183,28 +183,66 @@
     list-style-type: none;
     border-bottom: 1px solid #5b6987 ;
 }
-#features p {
+    #features p {
     color: #5b6987;
 }
-#features li {
+    #features li {
     display: inline-block;
     color: #5b6987;
     padding: 10px;
 }
+    #features .box {
+    padding: 20px;
+}
+    #features img {
+    display: block;
+    margin: 0 auto;
+}
+/* sezione carousel  */
+
+#carousel {
+    padding: 20px;
+}
+#carousel p {
+    padding: 20px;
+}
+#carousel img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+#carousel .img-carousel::before {
+    content: '\f060' ;
+    font-family: "font Awesome 5 Free";
+    font: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+#carousel .img-carousel::after {
+    content: '\f061' ;
+    font-family: "font Awesome 5 Free";
+    font: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0%;
+}
+#carousel ul {
+    list-style-type: none;
+    text-align: center;
+}
+#carousel li {
+    display: inline-block;
+    color: #006aff;
+}
 @media screen and  (min-width:768px)
 {
-    #jumbotron {
 
-}
-
-}
-
-@media screen and  (min-width:992px)
-{
-    #navbar-top {
-        display: block;
-    }
-/* Sezione features */
     #features ul {
 
         display: block;
@@ -220,3 +258,18 @@
         color: #5b6987;
         padding: 10px;
     }
+
+
+#features img {
+    display: block;
+    margin: 0  ;
+    }
+}
+@media screen and  (min-width:992px)
+{
+    #navbar-top {
+        display: block;
+    }
+
+}
+/* Sezione features */
