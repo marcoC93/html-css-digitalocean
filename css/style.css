@@ -1,5 +1,13 @@
 /* Regole generali */
+body {
+    font-family: "Sailec-Regular","system-ui","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Helvetica","Arial","sans-serif" ;
+}
 .btn-primary {
+    background-color: #006aff;
+    color: white;
+    font-weight: bold;
+}
+.btn-primary:hover {
     background-color: #006aff;
     color: white;
     font-weight: bold;
@@ -9,7 +17,11 @@
     color: #006aff;
     font-weight: bold;
 }
-
+.btn-secondary:hover {
+    background-color: #006aff ;
+    color: white;
+    font-weight: bold;
+}
 
 /* Inizio Navbar */
 
@@ -41,7 +53,10 @@
     line-height: 100%;
     color: #5b6987;
 }
-
+#navbar-top a:hover {
+    color: #006aff;
+    text-decoration: none;
+}
 .btn-custom {
     background-color: rgb(0,215,210);
 }
@@ -60,13 +75,17 @@
 .navbar-default .navbar-nav > li > a {
     height: 100%;
     line-height: 35px;
-    color: hsl(221,93%,16%) !important;
+    color: hsl(221,93%,16%) ;
 }
 .navbar-default .navbar-nav > a > span {
     width: 80px;
     height: 80%;
+    margin-right: 15px;
     line-height: 35px;
-
+}
+ .navbar-default .navbar-nav > li > a:hover{
+    color: #006aff ;
+    background: none;
 }
     /* Fine sezione "navbar"   */
 
@@ -84,6 +103,7 @@
     color: white;
     height: 70%;
     margin: auto;
+    padding: 30px;
 }
 
 
@@ -136,7 +156,7 @@
     float: left;
     display: block;
 
-    width: 10%;
+    width: 52px;
     text-align: center;
     padding: 10px 25px;
     border: 1px solid #006aff;
@@ -154,7 +174,7 @@
 
 /* Sezione customers */
 
-    #customers {
+    #customers     {
     background-color: #f3f5f9;
     padding: 30px;
 }
@@ -170,6 +190,7 @@
     width: 100%;
     color: #0069ff;
     font-size: 20px;
+    padding: 20px;
 }
     #features {
     height: 400px;
@@ -198,7 +219,10 @@
     display: block;
     margin: 0 auto;
 }
-.card {}
+.card {
+    padding: 30px;
+    text-align: center;
+}
 /* sezione carousel  */
 
 #carousel {
@@ -242,7 +266,9 @@
     color: #006aff;
 }
 /* Sezione build-for-business  */
-
+#build-for-business {
+    color: black;
+}
 /* Fine sezione build-for-business */
 /* Sezione Table */
 #table {
@@ -250,27 +276,111 @@
     background-position: center;
     background-size: contain;
 
-    height: 400px;
+
 }
-#table h2,p {
+#table h2  {
     color: white;
+    padding: 20px;
 }
 #table li {
-    
+
     list-style-type: none;
+    margin-bottom: 1px solid white;
 }
+#table .row {
+    width: 95%;
+    padding: 5px;
+    border-bottom: 1px solid white;
 }
-#table li p{
-    display: inline-block;
+
+#table .row span {
+    color: white;
+}
+#table .row p{
+
+    color: #5b6987 ;
 
 }
 #table li a {
     float: right;
     color: #00d7d2;
 }
+
+/* Sezione second carousel */
+#quote-carousel {
+    padding: 20px;
+    background-color: #f3f5f9;
+}
+#quote-carousel p {
+    padding: 20px;
+    font-size: 20px;
+}
+#quote-carousel img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+#quote {
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+#quote > p.text-capitalize {
+    margin: 0;
+    padding: 5px;
+}
+#quote-carousel #quote::before {
+    content: '\f060' ;
+    font-family: "font Awesome 5 Free";
+    font: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+#quote-carousel #quote::after {
+    content: '\f061' ;
+    font-family: "font Awesome 5 Free";
+    font: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0%;
+}
+#quote-carousel ul {
+    list-style-type: none;
+    text-align: center;
+}
+#quote-carousel li {
+    display: inline-block;
+    color: #006aff;
+}
+#cta {
+    background: url(https://prismic-io.s3.amazonaws.com/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg);
+    padding: 20px;
+}
+#cta .cta-button {
+    transform: translateY(50%);
+}
+#cta h2 {
+    color: white;
+}
+#cta a {
+    color: #006aff;
+}
+/* Fine sezione quote carousel */
 @media screen and  (min-width:768px)
 {
-
+    /* Sezione jumbotron */
+    #jumbotron-welcome-text {
+        /* transform: translateY(50%); */
+    }
+    /* Sezione features */
     #features ul {
 
         display: block;
@@ -286,18 +396,23 @@
         color: #5b6987;
         padding: 10px;
     }
-
+    .card {
+        padding: 30px;
+        text-align: left;
+    }
 
 #features img {
     display: block;
     margin: 0  ;
     }
 }
+
 @media screen and  (min-width:992px)
 {
     #navbar-top {
         display: block;
     }
-
+    #jumbotron-welcome-text {
+        transform: translateY(50%);
 }
 /* Sezione features */
