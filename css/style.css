@@ -192,11 +192,12 @@ body {
     font-size: 20px;
     padding: 20px;
 }
+    /* Sezione features */
     #features {
     height: 400px;
 }
     #features ul {
-
+    transform: translateY(50%);
     display: block;
     width: 70%;
     margin: 0 auto;
@@ -265,6 +266,11 @@ body {
     display: inline-block;
     color: #006aff;
 }
+#carousel li i:hover {
+    background: #006aff;
+    border-radius: 50%;
+}
+}
 /* Sezione build-for-business  */
 #build-for-business {
     color: black;
@@ -291,6 +297,7 @@ body {
     width: 95%;
     padding: 5px;
     border-bottom: 1px solid white;
+    margin: auto 0 ;
 }
 
 #table .row span {
@@ -360,6 +367,10 @@ body {
     display: inline-block;
     color: #006aff;
 }
+#quote-carousel li i:hover {
+    background: #006aff;
+    border-radius: 50%;
+}
 #cta {
     background: url(https://prismic-io.s3.amazonaws.com/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg);
     padding: 20px;
@@ -378,7 +389,7 @@ body {
 {
     /* Sezione jumbotron */
     #jumbotron-welcome-text {
-        /* transform: translateY(50%); */
+        transform: translateY(25%);
     }
     /* Sezione features */
     #features ul {
@@ -414,5 +425,6 @@ body {
     }
     #jumbotron-welcome-text {
         transform: translateY(50%);
+}
 }
 /* Sezione features */
